@@ -1,3 +1,4 @@
+import { TOASTER_REMOVE_EA_CHANNEL } from './../toasterChannels';
 import { IToast } from './../IToast';
 import { IEventAggregator, IDisposable, bindable, containerless } from 'aurelia';
 import { Toast as BSToast } from 'bootstrap';
@@ -16,7 +17,7 @@ export class Toast {
     attached() {
         this.showToast();
         this.toastRef.addEventListener('hidden.bs.toast', () => {
-            this.EventAggregator.publish("toast:remove", this.toast);
+            this.EventAggregator.publish(TOASTER_REMOVE_EA_CHANNEL, this.toast);
         })
     }
 

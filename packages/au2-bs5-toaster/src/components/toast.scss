@@ -1,0 +1,14 @@
+img {
+    &.error {
+        content: url("../assets/error.svg");
+    }
+    &.info {
+        content: url("../assets/info.svg");
+    }
+    &.success {
+        content: url("../assets/success.svg");
+    }
+    &.warning {
+        content: url("../assets/warning.svg");
+    }
+}
