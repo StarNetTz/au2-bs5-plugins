@@ -1,13 +1,13 @@
 {
   "name": "@starnetbih/au2-toaster",
   "description": "An Aurelia 2 client application.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Steffannj/au2-bs5-toaster.git"
+    "url": "https://github.com/StarNetTz/au2-bs5-plugins.git"
   },
   "main": "dist/index.js",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "dependencies": {
     "@popperjs/core": "^2.11.2",
     "aurelia": "latest",

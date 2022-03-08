@@ -1,4 +1,4 @@
-# au2-bs5-toaster
+# au2-toaster
 
 This project is bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
