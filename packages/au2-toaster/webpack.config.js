@@ -4,6 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const Dotenv = require('dotenv-webpack');
 const nodeExternals = require('webpack-node-externals');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+
+const srcDir = path.resolve(__dirname, 'src');
+const outDir = path.resolve(__dirname, 'dist');
+
 
 const cssLoader = 'css-loader';
 
@@ -74,7 +80,11 @@ module.exports = function (env, { analyze }) {
       new Dotenv({
         path: `./.env${production ? '' : '.' + (process.env.NODE_ENV || 'development')}`,
       }),
-      analyze && new BundleAnalyzerPlugin()
+      analyze && new BundleAnalyzerPlugin(),
+      new CopyWebpackPlugin({
+        patterns:[
+        { from: srcDir +'/assets', to: outDir + '/assets' }
+      ]})
     ].filter(p => p)
   }
 }
