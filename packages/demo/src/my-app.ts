@@ -1,5 +1,5 @@
-import { ToastType } from './../../au2-bs5-toaster/src/toastType';
-import { TOASTER_PUBLISH_EA_CHANNEL } from './../../au2-bs5-toaster/src/toasterChannels';
+import { ToastType, TOASTER_PUBLISH_EA_CHANNEL } from '@starnetbih/au2-toaster';
+
 import { IEventAggregator } from "aurelia";
 
 export class MyApp {

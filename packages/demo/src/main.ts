@@ -1,4 +1,4 @@
-import { Toaster } from '@au2-bootstrap5/toaster';
+import { Toaster } from '@starnetbih/au2-toaster';
 import Aurelia from 'aurelia';
 import { MyApp } from './my-app';
 

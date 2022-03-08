@@ -1,5 +1,5 @@
 {
-    "name": "au2-bootstrap5",
+    "name": "starnetbih",
     "private": true,
     "workspaces": [
         "packages/**"
