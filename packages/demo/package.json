@@ -9,7 +9,7 @@
   "license": "UNLICENSED",
   "dependencies": {
     "aurelia": "latest",
-    "@starnetbih/au2-bs5-toaster": "0.1.0"
+    "@au2-bootstrap5/toaster": "0.1.0"
   },
   "devDependencies": {
     "eslint": "^8.7.0",

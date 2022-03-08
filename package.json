@@ -1,9 +1,12 @@
 {
-    "name": "@starnetbih",
+    "name": "au2-bootstrap5",
+    "private": true,
     "workspaces": [
         "packages/**"
     ],
     "scripts": {
         "start": "npm run --prefix packages/demo start"
-      }
+    },
+    "dependencies": {
+    }
 }
