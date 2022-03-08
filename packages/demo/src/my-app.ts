@@ -4,6 +4,8 @@ import { IEventAggregator } from "aurelia";
 
 export class MyApp {
   public message = 'Hello World!';
+  totalItems: number = 20;
+  currentPageIdx: number = 0;
 
   constructor(@IEventAggregator private ea: IEventAggregator) { }
 
