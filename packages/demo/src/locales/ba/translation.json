@@ -1,5 +1,7 @@
 {
-	"page": "Strana:",
-	"results": "Rezultata:",
-	"of": "od"
+	"pagination": {
+		"page": "Strana:",
+		"results": "Rezultata:",
+		"of": "od"
+	}
 }

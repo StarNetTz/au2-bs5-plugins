@@ -13,15 +13,15 @@
     <li class="page-item">
       <div class="input-group">
         <div class="input-group-prepend">
-          <label class="input-group-text f-s-12 f-w-600"><span t="paginator.page">Page<span></label>
+          <label class="input-group-text f-s-12 f-w-600"><span t="pagination.page">Page<span></label>
         </div>
         <input value.bind="currentPage & debounce:400" class="form-control m-l-2 m-r-2 p-r-0" 
           type="number" min.bind="1" max.bind="totalPages" disabled.bind="isDisabled" onfocus="this.select();" />
         <div class="input-group-append">
-          <label class="input-group-text f-s-12 f-w-600"><span t="paginator.of">of<span> ${totalPages}</label>
+          <label class="input-group-text f-s-12 f-w-600"><span t="pagination.of">of</span>&nbsp;${totalPages}</label>
         </div>
         <div class="input-group-append">
-          <label class="input-group-text f-s-12 f-w-600"><span t="paginator.totalItems">Results:</span>&nbsp;${totalItems}</label>
+          <label class="input-group-text f-s-12 f-w-600"><span t="pagination.results">Results:</span>&nbsp;${totalItems}</label>
         </div>
       </div>
     </li>
