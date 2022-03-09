@@ -1,4 +1,4 @@
-import { TOASTER_REMOVE_EA_CHANNEL, TOASTER_PUBLISH_EA_CHANNEL } from '@starnetbih/au2-toaster';
+import { TOASTER_PUBLISH_EA_CHANNEL, TOASTER_REMOVE_EA_CHANNEL } from './toasterChannels';
 import { containerless, IDisposable, IEventAggregator } from "aurelia";
 import { IToast } from './IToast';
 
