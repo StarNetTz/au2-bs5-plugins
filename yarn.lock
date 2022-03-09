@@ -106,7 +106,7 @@
     "@aurelia/metadata" "2.0.0-alpha.25"
     "@aurelia/platform" "2.0.0-alpha.25"
 
-"@aurelia/testing@latest":
+"@aurelia/testing@^2.0.0-alpha.25":
   version "2.0.0-alpha.25"
   resolved "https://registry.yarnpkg.com/@aurelia/testing/-/testing-2.0.0-alpha.25.tgz#dc1f5f493075fd6a30bf2f2cb95eaf51b1c69396"
   integrity sha512-EIu0pJuIzu0H7pUTfULp/nxfBgSjIKwX2nA07bNsarx381rPY97tLPOVd7GkjC2uoTc7oJLQ/3emkXugTstviQ==
@@ -118,7 +118,7 @@
     "@aurelia/runtime" "2.0.0-alpha.25"
     "@aurelia/runtime-html" "2.0.0-alpha.25"
 
-"@aurelia/ts-jest@latest":
+"@aurelia/ts-jest@^2.0.0-alpha.25":
   version "2.0.0-alpha.25"
   resolved "https://registry.yarnpkg.com/@aurelia/ts-jest/-/ts-jest-2.0.0-alpha.25.tgz#87947e18d78165977eaf55a776ceb1dce6c2f38d"
   integrity sha512-bSLE4OXh9UTp6FYGIIek8wHaUa/uwB4rr4wmIe0BD49m0svoWbTr7QV60lodG1A1W/NBrq43CcNw8wKce6CjIQ==
@@ -130,7 +130,7 @@
     "@aurelia/runtime" "2.0.0-alpha.25"
     ts-jest "^27.0.4"
 
-"@aurelia/webpack-loader@latest":
+"@aurelia/webpack-loader@^2.0.0-alpha.25":
   version "2.0.0-alpha.25"
   resolved "https://registry.yarnpkg.com/@aurelia/webpack-loader/-/webpack-loader-2.0.0-alpha.25.tgz#8075e5b2a7ae9495c1c81127b2167d52f550b2af"
   integrity sha512-F6nd8Z8UobBvqLtCJroXetJWOG0UZ5FH0svnJQ/LEzeINAtt0SdUZAqiyM8RSxH6R57s2GQdyJEtQQzxx5EekQ==
@@ -1441,7 +1441,7 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
   integrity sha1-x57Zf380y48robyXkLzDZkdLS3k=
 
-aurelia@latest:
+aurelia@^2.0.0-alpha.25:
   version "2.0.0-alpha.25"
   resolved "https://registry.yarnpkg.com/aurelia/-/aurelia-2.0.0-alpha.25.tgz#eb147aafe59c3c841ee9013bf0ab32b7915d3011"
   integrity sha512-k/6j7onFwl8Tl92EHckiDSc+mDxZbCbkVc7Ij3aqMF3NZm1ul/EtXrK/TQJRvNBT0jw69NaQ+sd8CKdlMgrOSw==
