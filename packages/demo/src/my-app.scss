@@ -51,6 +51,13 @@
  @import"../../../node_modules/bootstrap/scss/progress";
  @import"../../../node_modules/bootstrap/scss/list-group";
  @import"../../../node_modules/bootstrap/scss/close";
+ @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+
+@import "~@fortawesome/fontawesome-free/scss/regular.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+ 
  @import"../../../node_modules/bootstrap/scss/toasts";
  @import"../../../node_modules/bootstrap/scss/modal";
  @import"../../../node_modules/bootstrap/scss/tooltip";

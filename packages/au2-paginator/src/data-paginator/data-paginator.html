@@ -1,0 +1,40 @@
+<nav>
+  <ul class="pagination">
+    <li class="page-item ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+      <a class="page-link" click.trigger="onRefresh(first)" role="button">
+        <i class="fa-solid fa-backward-fast"></i>
+      </a>
+    </li>
+    <li class="page-item ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+      <a class="page-link" click.trigger="onRefresh(prev)" role="button">
+        <i class="fa-solid fa-angles-left"></i>
+      </a>
+    </li>
+    <li class="page-item">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <label class="input-group-text f-s-12 f-w-600"><span t="pagination.page">Page<span></label>
+        </div>
+        <input value.bind="currentPage & debounce:400" class="form-control m-l-2 m-r-2 p-r-0" type="number" min.bind="1"
+          max.bind="totalPages" disabled.bind="isDisabled" onfocus="this.select();" />
+        <div class="input-group-append">
+          <label class="input-group-text f-s-12 f-w-600"><span t="pagination.of">of</span>&nbsp;${totalPages}</label>
+        </div>
+        <div class="input-group-append">
+          <label class="input-group-text f-s-12 f-w-600"><span
+              t="pagination.results">Results:</span>&nbsp;${totalItems}</label>
+        </div>
+      </div>
+    </li>
+    <li class="page-item ${isLastAndNextDisabled ? 'disabled' : ''}">
+      <a class="page-link" click.trigger="onRefresh(next)" role="button">
+        <i class="fa-solid fa-angles-right"></i>
+      </a>
+    </li>
+    <li class="page-item ${isLastAndNextDisabled ? 'disabled' : ''}">
+      <a class="page-link" click.trigger="onRefresh(last)" role="button">
+        <i class="fa-solid fa-forward-fast"></i>
+      </a>
+    </li>
+  </ul>
+</nav>

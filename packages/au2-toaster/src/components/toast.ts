@@ -1,5 +1,5 @@
-import { TOASTER_REMOVE_EA_CHANNEL, IToast } from '@starnetbih/au2-toaster';
-
+import { TOASTER_REMOVE_EA_CHANNEL } from './../toasterChannels';
+import { IToast } from './../IToast';
 import { IEventAggregator, IDisposable, bindable, containerless } from 'aurelia';
 import { Toast as BSToast } from 'bootstrap';
 

@@ -1,0 +1,11 @@
+{
+	"pagination": {
+		"page": "Page:",
+		"results": "Results:",
+		"of": "of",
+		"first":"First",
+		"previous":"Previous",
+		"next": "Next",
+		"last":"Last"
+	}
+}

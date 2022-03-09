@@ -3,21 +3,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const Dotenv = require('dotenv-webpack');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-
-const srcDir = path.resolve(__dirname, 'src');
-const outDir = path.resolve(__dirname, 'dist');
+const nodeExternals = require('webpack-node-externals');
 
 const cssLoader = 'css-loader';
-
-const sassLoader = {
-  loader: 'sass-loader',
-  options: {
-    sassOptions: {
-      includePaths: ['node_modules']
-    }
-  }
-};
 
 const postcssLoader = {
   loader: 'postcss-loader',
@@ -28,18 +16,35 @@ const postcssLoader = {
   }
 };
 
+const sassLoader = {
+  loader: 'sass-loader',
+  options: {
+    sassOptions: {
+      includePaths: ['node_modules']
+    }
+  }
+};
+
 module.exports = function (env, { analyze }) {
   const production = env.production || process.env.NODE_ENV === 'production';
   return {
-    target: 'web',
+    externalsPresets: { node: true },
+    externals: [
+      nodeExternals(),
+      nodeExternals({
+        modulesDir: path.resolve(__dirname, '../../node_modules'),
+      }),],
     mode: production ? 'production' : 'development',
     devtool: production ? undefined : 'eval-cheap-source-map',
     entry: {
-      entry: './src/main.ts'
+      entry: './src/index.ts'
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: production ? '[name].[contenthash].bundle.js' : '[name].bundle.js'
+      filename: production ? 'index.js' : '[name].bundle.js',
+      library: {
+        type: 'umd'
+      }
     },
     resolve: {
       extensions: ['.ts', '.js'],
@@ -69,12 +74,7 @@ module.exports = function (env, { analyze }) {
       new Dotenv({
         path: `./.env${production ? '' : '.' + (process.env.NODE_ENV || 'development')}`,
       }),
-      analyze && new BundleAnalyzerPlugin(),
-      new CopyWebpackPlugin({
-        patterns: [
-          { from: srcDir + '/locales', to: outDir + '/locales' }
-        ]
-      })
+      analyze && new BundleAnalyzerPlugin()
     ].filter(p => p)
   }
 }
