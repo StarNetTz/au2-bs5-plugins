@@ -1,27 +1,27 @@
 <nav>
   <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" click.trigger="onRefresh(first)"  t="pagination.first">
+    <li class="page-item ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+      <a class="page-link" click.trigger="onRefresh(first)" t="pagination.first" role="button">
         First
       </a>
     </li>
-    <li class="page-item">
-      <a class="page-link" click.trigger="onRefresh(prev)"  t="pagination.previous">
-       Previous
+    <li class="page-item ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+      <a class="page-link" click.trigger="onRefresh(prev)" t="pagination.previous" role="button">
+        Previous
       </a>
     </li>
-    <li  repeat.for="page of pages" class="page-item ${page.value == currentPageIdx ? 'active' : ''}">
-      <a class="page-link" click.trigger="onRefresh(page.value)">
+    <li repeat.for="page of pages" class="page-item ${page.value == currentPageIdx ? 'active' : ''}">
+      <a class="page-link" click.trigger="onRefresh(page.value)" role="button">
         ${page.text}
       </a>
     </li>
-    <li class="page-item">
-      <a class="page-link" click.trigger="onRefresh(next)"  t="pagination.next">
+    <li class="page-item ${isLastAndNextDisabled ? 'disabled' : ''}">
+      <a class="page-link" click.trigger="onRefresh(next)" t="pagination.next" role="button">
         Next
       </a>
     </li>
-    <li class="page-item">
-      <a class="page-link" click.trigger="onRefresh(last)" t="pagination.last">
+    <li class="page-item ${isLastAndNextDisabled ? 'disabled' : ''}">
+      <a class="page-link" click.trigger="onRefresh(last)" t="pagination.last" role="button">
         Last
       </a>
     </li>
