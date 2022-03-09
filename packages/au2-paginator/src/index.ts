@@ -1,1 +1,1 @@
-export * from './paginator/paginator';
+export * from './data-paginator/data-paginator';

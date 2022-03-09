@@ -17,6 +17,18 @@
     "@aurelia/kernel" "2.0.0-alpha.24"
     "@aurelia/metadata" "2.0.0-alpha.24"
 
+"@aurelia/i18n@^2.0.0-alpha.25":
+  version "2.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@aurelia/i18n/-/i18n-2.0.0-alpha.25.tgz#89f7bd5393bad544828755946d58eecc5cf049a8"
+  integrity sha512-CJmq82u8SJIfzEOr6hNqupsLDdRWB+3JZ6q6pSMPbJqcFgvYOFRxlAocg8A/wA+8tA8PpFHp/X1YGE7z3qiqwQ==
+  dependencies:
+    "@aurelia/kernel" "2.0.0-alpha.25"
+    "@aurelia/metadata" "2.0.0-alpha.25"
+    "@aurelia/platform" "2.0.0-alpha.25"
+    "@aurelia/runtime" "2.0.0-alpha.25"
+    "@aurelia/runtime-html" "2.0.0-alpha.25"
+    i18next "^17.0.0"
+
 "@aurelia/kernel@2.0.0-alpha.24":
   version "2.0.0-alpha.24"
   resolved "https://registry.yarnpkg.com/@aurelia/kernel/-/kernel-2.0.0-alpha.24.tgz#4f5aab5b230890a6b765770e18525571bc9d993b"
@@ -25,10 +37,23 @@
     "@aurelia/metadata" "2.0.0-alpha.24"
     "@aurelia/platform" "2.0.0-alpha.24"
 
+"@aurelia/kernel@2.0.0-alpha.25":
+  version "2.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@aurelia/kernel/-/kernel-2.0.0-alpha.25.tgz#1da8345968d01847467ebd24803cd86730d3770c"
+  integrity sha512-JyOrPpDwkrI4IzwjpSKH9xFqw6zbcb0zT9oSImqEyitsWnljEiZR6lmqfro88oGXfnjESZnTgGp5CzO0JlvGYg==
+  dependencies:
+    "@aurelia/metadata" "2.0.0-alpha.25"
+    "@aurelia/platform" "2.0.0-alpha.25"
+
 "@aurelia/metadata@2.0.0-alpha.24":
   version "2.0.0-alpha.24"
   resolved "https://registry.yarnpkg.com/@aurelia/metadata/-/metadata-2.0.0-alpha.24.tgz#7af108f3e3870082578406ece2da41cb487c4079"
   integrity sha512-xDq6OaGklR/cUzslPK/hjqjINS0Aa2lS9Xr4aVUQimUNut9ybvLyc+WOhKQmYhGmc8NsAZO0atRoEfGouV9sBA==
+
+"@aurelia/metadata@2.0.0-alpha.25":
+  version "2.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@aurelia/metadata/-/metadata-2.0.0-alpha.25.tgz#894c2840019fdf5a497b9ec179dd880581b6ae70"
+  integrity sha512-axw3SPS0mmDnevaDFfnsBCex5epALlS/8hFLUjY8QZq2H87TePT/M5r/CAjvWOX/GMYXROvx+v1ICZvc0uTL9Q==
 
 "@aurelia/platform-browser@2.0.0-alpha.24":
   version "2.0.0-alpha.24"
@@ -37,10 +62,22 @@
   dependencies:
     "@aurelia/platform" "2.0.0-alpha.24"
 
+"@aurelia/platform-browser@2.0.0-alpha.25":
+  version "2.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@aurelia/platform-browser/-/platform-browser-2.0.0-alpha.25.tgz#78a4a7869d7071e204aa0fc7b807b4e3da672dde"
+  integrity sha512-25l709emJdFZkkWXQxMCJVl0AdAdy42MFUoFPKJus2hWLnQ3MV8oy+gvctNhKSqk7iYD/ez8/+pKC23fpRVmsA==
+  dependencies:
+    "@aurelia/platform" "2.0.0-alpha.25"
+
 "@aurelia/platform@2.0.0-alpha.24":
   version "2.0.0-alpha.24"
   resolved "https://registry.yarnpkg.com/@aurelia/platform/-/platform-2.0.0-alpha.24.tgz#154cb9b0d9c33dfbfcb25b5439ed9c4db625c539"
   integrity sha512-hAVJkmyASDftUyB0C5vvHmDUvErGHxL+d7Bw9UgOQbgddQBWIiU91fRcdPoSHp8cOFQUyg8rVUQEAsEOLBz18w==
+
+"@aurelia/platform@2.0.0-alpha.25":
+  version "2.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@aurelia/platform/-/platform-2.0.0-alpha.25.tgz#31ad10c9e3d81fa4e7763c7246d7af5e01aa4c26"
+  integrity sha512-VVQdh7/L2tC5TuLc0m3i4z/t+8eDUqZHd8FDEdbeSUGzpdXJPAfyyAxO5oUFgO8CSJ/s2oJs/GoMOa4jcoBFKg==
 
 "@aurelia/plugin-conventions@2.0.0-alpha.24":
   version "2.0.0-alpha.24"
@@ -85,6 +122,17 @@
     "@aurelia/platform-browser" "2.0.0-alpha.24"
     "@aurelia/runtime" "2.0.0-alpha.24"
 
+"@aurelia/runtime-html@2.0.0-alpha.25":
+  version "2.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@aurelia/runtime-html/-/runtime-html-2.0.0-alpha.25.tgz#15384d8820fd591f51f6a7b80be982d65d21bdd3"
+  integrity sha512-vhXKS4ocEKjq2wquJL/CzjXOekC5DeWoMha3TG7Zw/aa8fzY7XkibTa3ZzsK7RRZpw5Mca5aB2QDHWPGeQ5Gyg==
+  dependencies:
+    "@aurelia/kernel" "2.0.0-alpha.25"
+    "@aurelia/metadata" "2.0.0-alpha.25"
+    "@aurelia/platform" "2.0.0-alpha.25"
+    "@aurelia/platform-browser" "2.0.0-alpha.25"
+    "@aurelia/runtime" "2.0.0-alpha.25"
+
 "@aurelia/runtime@2.0.0-alpha.24":
   version "2.0.0-alpha.24"
   resolved "https://registry.yarnpkg.com/@aurelia/runtime/-/runtime-2.0.0-alpha.24.tgz#44a1cab82b4c16cf4ae77b3b2984f7fed7e81d5f"
@@ -93,6 +141,15 @@
     "@aurelia/kernel" "2.0.0-alpha.24"
     "@aurelia/metadata" "2.0.0-alpha.24"
     "@aurelia/platform" "2.0.0-alpha.24"
+
+"@aurelia/runtime@2.0.0-alpha.25":
+  version "2.0.0-alpha.25"
+  resolved "https://registry.yarnpkg.com/@aurelia/runtime/-/runtime-2.0.0-alpha.25.tgz#0e97abeb0cbf6c03d624822c1b77b1aa8972bb00"
+  integrity sha512-Vz9NogiT/1vRh0gTY5kUMQ1cQc0f4JqoWp6YQj8chiKHiAls8ftu7ifNXkM3jkS17TchZ6qmScE+s28t27KvJw==
+  dependencies:
+    "@aurelia/kernel" "2.0.0-alpha.25"
+    "@aurelia/metadata" "2.0.0-alpha.25"
+    "@aurelia/platform" "2.0.0-alpha.25"
 
 "@aurelia/testing@latest":
   version "2.0.0-alpha.24"
@@ -375,6 +432,13 @@
   integrity sha512-YhUIJHHGkqPgEcMYkPCKTyGUdoGKWtopIycQyjJH8OjvRgOYsXsaKehLVPScKJWAULPxMa4N1vCe6szREFlZ7A==
   dependencies:
     "@babel/helper-plugin-utils" "^7.16.7"
+
+"@babel/runtime@^7.3.1":
+  version "7.17.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.17.2.tgz#66f68591605e59da47523c631416b18508779941"
+  integrity sha512-hzeyJyMA1YGdJTuWU0e/j4wKXrU4OMFvY2MSlaI9B7VQb0r5cxTE3EAIS2Q7Tn2RIcDkRvTA/v2JsAEhxe99uw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
 
 "@babel/template@^7.16.7", "@babel/template@^7.3.3":
   version "7.16.7"
@@ -3265,6 +3329,18 @@ human-signals@^2.1.0:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
 
+i18next-fetch-backend@^4.1.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/i18next-fetch-backend/-/i18next-fetch-backend-4.1.1.tgz#5b3f3d4fd91ae1c8bdc5e30537529d5b804b467e"
+  integrity sha512-QNLFMvRWaW0sHvpz5K+qdKzlFEQxDl5c1Vep2w2pA9T5Sl1Ac7O5gJiONkwDgTCqJg+YHodUmxudZ26crwij4w==
+
+i18next@^17.0.0:
+  version "17.3.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-17.3.1.tgz#5fe75e054aae39a6f38f1a79f7ab49184c6dc7a1"
+  integrity sha512-4nY+yaENaoZKmpbiDXPzucVHCN3hN9Z9Zk7LyQXVOKVIpnYOJ3L/yxHJlBPtJDq3PGgjFwA0QBFm/26Z0iDT5A==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -4964,6 +5040,11 @@ rechoir@^0.7.0:
   integrity sha512-/njmZ8s1wVeR6pjTZ+0nCnv8SpZNRMT2D1RLOJQESlYFDBvwpTA4KWJpZ+sBJ4+vhjILRcK7JIFdGCdxEAAitg==
   dependencies:
     resolve "^1.9.0"
+
+regenerator-runtime@^0.13.4:
+  version "0.13.9"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz#8925742a98ffd90814988d7566ad30ca3b263b52"
+  integrity sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==
 
 regexp.prototype.flags@^1.2.0:
   version "1.4.1"
