@@ -1,0 +1,31 @@
+<nav>
+    <ul class="pagination ${size ? `pagination-${size}` : ''}">
+      <li class="page-item ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+        <a class="page-link" click.trigger="onRefresh(first)" role="button">
+          <i class="fa-solid fa-backward-fast"></i>
+        </a>
+      </li>
+      <li class="page-item ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+        <a class="page-link" click.trigger="onRefresh(prev)" role="button">
+          <i class="fa-solid fa-angles-left"></i>
+        </a>
+      </li>
+      <li class="page-item">
+        <div class="input-group h-100 ${size ? `input-group-${size}` : ''}">
+          <input value.bind="currentPage & debounce:400" class="form-control" type="number" min.bind="1"
+            max.bind="totalPages" disabled.bind="isDisabled" onfocus="this.select();" />
+          <span class="input-group-text"><span t="pagination.of"></span>&nbsp;${totalPages}<span>&nbsp;(${totalItems})</span></span>
+        </div>
+      </li>
+      <li class="page-item ${isLastAndNextDisabled ? 'disabled' : ''}">
+        <a class="page-link" click.trigger="onRefresh(next)" role="button">
+          <i class="fa-solid fa-angles-right"></i>
+        </a>
+      </li>
+      <li class="page-item ${isLastAndNextDisabled ? 'disabled' : ''}">
+        <a class="page-link" click.trigger="onRefresh(last)" role="button">
+          <i class="fa-solid fa-forward-fast"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>

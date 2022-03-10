@@ -1,12 +1,12 @@
 import { bindable, observable } from '@aurelia/runtime-html';
 
-export class DataPaginator {
+export class Paginator {
 	@bindable totalItems = 0;
 	@bindable currentPageIdx = 0;
 	@bindable pageSize = 10;
 	@bindable maxPageBlocks = 10;
 	@bindable isDisabled = false;
-	@bindable size = Size;
+	@bindable size: Size;
 	@observable currentPage: number;
 
 	private totalPages: number;
@@ -40,11 +40,11 @@ export class DataPaginator {
 
 	currentPageChanged(n, o) {
 
-		if (!this.isInitialized) 
+		if (!this.isInitialized)
 			return;
 
 		if ((n < 1) || (n > this.totalPages)) {
-			setTimeout(()=>{this.currentPage = o;}, 5);
+			setTimeout(() => { this.currentPage = o; }, 5);
 			return;
 		}
 
@@ -71,8 +71,8 @@ export class DataPaginator {
 
 	calcTotalPages() {
 		let totalPages = Math.floor(this.totalItems / this.pageSize);
-		
-		if (this.totalItems % this.pageSize) 
+
+		if (this.totalItems % this.pageSize)
 			totalPages++;
 
 		this.totalPages = totalPages;
@@ -80,9 +80,9 @@ export class DataPaginator {
 	}
 
 	calcPrevValue() {
-		if (this.currentPageIdx > 0) 
+		if (this.currentPageIdx > 0)
 			this.prev = this.currentPageIdx - 1;
-		else 
+		else
 			this.prev = 0
 	}
 
@@ -110,6 +110,6 @@ export class DataPaginator {
 }
 
 export enum Size {
-    Small = 'sm',
-    Large = 'lg',
+	Small = 'sm',
+	Large = 'lg',
 }
