@@ -6,6 +6,7 @@ export class DataPaginator {
 	@bindable pageSize = 10;
 	@bindable maxPageBlocks = 10;
 	@bindable isDisabled = false;
+	@bindable size = Size;
 	@observable currentPage: number;
 
 	private totalPages: number;
@@ -106,4 +107,9 @@ export class DataPaginator {
 		this.isFirstAndPrevDisabled = (val == this.first);
 		this.isLastAndNextDisabled = (val == this.last);
 	}
+}
+
+export enum Size {
+    Small = 'sm',
+    Large = 'lg',
 }
