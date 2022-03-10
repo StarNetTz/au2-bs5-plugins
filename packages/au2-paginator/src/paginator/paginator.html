@@ -16,22 +16,7 @@
         <input value.bind="currentPage & debounce:400" class="form-control" type="number" min.bind="1"
           max.bind="totalPages" disabled.bind="isDisabled" onfocus="this.select();" />
         <span class="input-group-text"><span t="pagination.of"></span>&nbsp;${totalPages}</span>
-        <span class="input-group-text"><span t="pagination.results"></span>&nbsp;${totalItems}</span>
       </div>
-      <!-- <div class="input-group">
-        <div class="input-group-prepend">
-          <label class="input-group-text f-s-12 f-w-600"><span t="pagination.page">Page<span></label>
-        </div>
-        <input value.bind="currentPage & debounce:400" class="form-control m-l-2 m-r-2 p-r-0" type="number" min.bind="1"
-          max.bind="totalPages" disabled.bind="isDisabled" onfocus="this.select();" />
-        <div class="input-group-append">
-          <label class="input-group-text f-s-12 f-w-600"><span t="pagination.of">of</span>&nbsp;${totalPages}</label>
-        </div>
-        <div class="input-group-append">
-          <label class="input-group-text f-s-12 f-w-600"><span
-              t="pagination.results">Results:</span>&nbsp;${totalItems}</label>
-        </div>
-      </div> -->
     </li>
     <li class="page-item ${isLastAndNextDisabled ? 'disabled' : ''}">
       <a class="page-link" click.trigger="onRefresh(next)" role="button">
@@ -42,6 +27,11 @@
       <a class="page-link" click.trigger="onRefresh(last)" role="button">
         <i class="fa-solid fa-forward-fast"></i>
       </a>
+    </li>
+    <li class="page-item">
+      <div class="input-group h-100 ${size ? `input-group-${size}` : ''}">
+        <span class="input-group-text"><span t="pagination.results"></span>&nbsp;${totalItems}</span>
+      </div>
     </li>
   </ul>
 </nav>
