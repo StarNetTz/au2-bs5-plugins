@@ -10,8 +10,8 @@
   "dependencies": {
     "@aurelia/i18n": "latest",
     "@fortawesome/fontawesome-free": "^6.0.0",
-    "@starnetbih/au2-paginator": "0.1.5",
-    "@starnetbih/au2-toaster": "0.1.5",
+    "@starnetbih/au2-paginator": "0.4.6",
+    "@starnetbih/au2-toaster": "0.4.6",
     "aurelia": "latest",
     "autoprefixer": "10.4.5",
     "i18next-fetch-backend": "^4.1.0"
