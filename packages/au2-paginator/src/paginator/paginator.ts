@@ -1,4 +1,5 @@
-import { bindable, observable } from '@aurelia/runtime-html';
+import { bindable } from '@aurelia/runtime-html';
+import { observable } from '@aurelia/runtime';
 
 export class Paginator {
 	@bindable totalItems = 0;

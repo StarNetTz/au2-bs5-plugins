@@ -1,27 +1,30 @@
 {
   "name": "demo",
   "description": "An Aurelia 2 client application.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "???"
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "@aurelia/i18n": "^2.0.0-alpha.25",
+    "@aurelia/i18n": "latest",
     "@fortawesome/fontawesome-free": "^6.0.0",
-    "@starnetbih/au2-paginator": "0.1.3",
-    "@starnetbih/au2-toaster": "0.1.4",
-    "aurelia": "^2.0.0-alpha.25",
+    "@starnetbih/au2-paginator": "0.4.6",
+    "@starnetbih/au2-toaster": "0.4.6",
+    "aurelia": "latest",
+    "autoprefixer": "10.4.5",
     "i18next-fetch-backend": "^4.1.0"
   },
+  "resolutions": {
+    "autoprefixer": "10.4.5"
+  },
   "devDependencies": {
-    "@aurelia/testing": "^2.0.0-alpha.25",
-    "@aurelia/webpack-loader": "^2.0.0-alpha.25",
+    "@aurelia/testing": "latest",
+    "@aurelia/webpack-loader": "latest",
     "@types/node": "^17.0.10",
     "@typescript-eslint/eslint-plugin": "^5.10.0",
     "@typescript-eslint/parser": "^5.10.0",
-    "autoprefixer": "^10.4.2",
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.5.1",
     "dotenv-webpack": "^7.0.3",
