@@ -1,7 +1,7 @@
 {
   "name": "@starnetbih/au2-toaster",
   "description": "An Aurelia 2 client application.",
-  "version": "0.4.14",
+  "version": "0.5.0",
   "files": [
     "dist"
   ],
