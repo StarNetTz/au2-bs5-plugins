@@ -35,7 +35,7 @@ export class Paginator {
 
 	attached() {
 		this.render();
-		this.disableUnclickableButtons(0);
+		this.disableUnclickableButtons(this.currentPageIdx);
 		this.isInitialized = true;
 	}
 

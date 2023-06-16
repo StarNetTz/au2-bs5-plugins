@@ -100,7 +100,7 @@ export class PageNavigator {
 			if (this.startIdx < 0)
 				this.startIdx = 0;
 		} else {
-			let half = Math.floor(this.maxPageBlocks / 2);
+			const half = Math.floor(this.maxPageBlocks / 2);
 			this.startIdx = this.currentPageIdx - half;
 		}
 		if (this.totalPages <= this.maxPageBlocks)
@@ -110,13 +110,13 @@ export class PageNavigator {
 	}
 
 	isLeftInterval() {
-		let half = this.maxPageBlocks / 2;
+		const half = this.maxPageBlocks / 2;
 		return (this.currentPageIdx < half);
 	}
 
 	isRightInterval() {
-		let half = this.maxPageBlocks / 2;
-		let rightIntervalStartIdx = (this.totalPages - 1) - half;
+		const half = this.maxPageBlocks / 2;
+		const rightIntervalStartIdx = (this.totalPages - 1) - half;
 		return (this.currentPageIdx > rightIntervalStartIdx);
 	}
 }
