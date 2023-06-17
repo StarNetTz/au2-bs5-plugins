@@ -1,11 +1,11 @@
 <nav>
   <ul class="pagination ${size ? `pagination-${size}` : ''}">
-    <li class="page-item m-0 ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+    <li class="page-item m-0 ${isFirstAndPrevDisabled || isDisabled ? 'disabled' : ''}">
       <a class="page-link" click.trigger="onRefresh(first)" role="button">
         <i class="fa-solid fa-backward-fast"></i>
       </a>
     </li>
-    <li class="page-item m-0 ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+    <li class="page-item m-0 ${isFirstAndPrevDisabled || isDisabled ? 'disabled' : ''}">
       <a class="page-link" click.trigger="onRefresh(prev)" role="button">
         <i class="fa-solid fa-angles-left"></i>
       </a>
@@ -18,12 +18,12 @@
         <span class="input-group-text"><span t="pagination.of"></span>&nbsp;${totalPages}</span>
       </div>
     </li>
-    <li class="page-item m-0 ${isLastAndNextDisabled ? 'disabled' : ''}">
+    <li class="page-item m-0 ${isLastAndNextDisabled || isDisabled ? 'disabled' : ''}">
       <a class="page-link" click.trigger="onRefresh(next)" role="button">
         <i class="fa-solid fa-angles-right"></i>
       </a>
     </li>
-    <li class="page-item m-0 ${isLastAndNextDisabled ? 'disabled' : ''}">
+    <li class="page-item m-0 ${isLastAndNextDisabled || isDisabled ? 'disabled' : ''}">
       <a class="page-link" click.trigger="onRefresh(last)" role="button">
         <i class="fa-solid fa-forward-fast"></i>
       </a>

@@ -1,11 +1,11 @@
 <nav>
   <ul class="pagination">
-    <li class="page-item ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+    <li class="page-item ${isFirstAndPrevDisabled || isDisabled ? 'disabled' : ''}">
       <a class="page-link" click.trigger="onRefresh(first)" t="pagination.first" role="button">
         First
       </a>
     </li>
-    <li class="page-item ${isFirstAndPrevDisabled ? 'disabled' : ''}">
+    <li class="page-item ${isFirstAndPrevDisabled || isDisabled ? 'disabled' : ''}">
       <a class="page-link" click.trigger="onRefresh(prev)" t="pagination.previous" role="button">
         Previous
       </a>
@@ -15,12 +15,12 @@
         ${page.text}
       </a>
     </li>
-    <li class="page-item ${isLastAndNextDisabled ? 'disabled' : ''}">
+    <li class="page-item ${isLastAndNextDisabled || isDisabled ? 'disabled' : ''}">
       <a class="page-link" click.trigger="onRefresh(next)" t="pagination.next" role="button">
         Next
       </a>
     </li>
-    <li class="page-item ${isLastAndNextDisabled ? 'disabled' : ''}">
+    <li class="page-item ${isLastAndNextDisabled || isDisabled ? 'disabled' : ''}">
       <a class="page-link" click.trigger="onRefresh(last)" t="pagination.last" role="button">
         Last
       </a>
