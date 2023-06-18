@@ -16,10 +16,11 @@ export class Toaster {
 
 	attached() {
 		this.showToastSubscription = this.EventAggregator.subscribe(TOASTER_PUBLISH_EA_CHANNEL, (tst: IToast) => {
+			console.log("I live");
 			this.toasts.push(tst);
 		});
 		this.removeToastSubscription = this.EventAggregator.subscribe(TOASTER_REMOVE_EA_CHANNEL, (tst: IToast) => {
-			let idx = this.toasts.indexOf(tst);
+			const idx = this.toasts.indexOf(tst);
 			this.toasts.splice(idx, 1);
 		})
 	}

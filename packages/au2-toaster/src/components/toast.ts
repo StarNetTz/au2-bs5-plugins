@@ -22,7 +22,7 @@ export class Toast {
     }
 
     private showToast() {
-        let toast = new BSToast(this.toastRef);
+        const toast = new BSToast(this.toastRef);
         toast.show();
     }
 }
